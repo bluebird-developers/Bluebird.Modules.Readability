@@ -1,0 +1,10 @@
+{
+  "name": "bluebird.modules.readability",
+  "private": true,
+  "scripts": {
+    "build": "esbuild readability.js --minify --bundle --outdir=dist"
+  },
+  "dependencies": {
+    "esbuild": "^0.24.0"
+  }
+}
