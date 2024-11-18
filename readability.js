@@ -2,6 +2,7 @@ import Readability from "./libs/readability.js";
 
 const article = new Readability(document).parse();
 const title = article.title;
+const byline = article.byline;
 const content = article.content;
 
 const titleHeader = "<title>" + title + "</title>\n";
@@ -10,4 +11,5 @@ const stylesHeader = "<style>body { font-family: 'Segoe UI'; max-width: 600px; m
 document.getElementsByTagName("head")[0].innerHTML = titleHeader + stylesHeader;
 document.body.innerHTML = null;
 document.body.innerHTML = "<h2>" + title + "</h2>";
+document.body.innerHTML += "<h3>" + byline + "</h3";
 document.body.innerHTML += content;
