@@ -11,5 +11,9 @@ const stylesHeader = "<style>body { font-family: 'Segoe UI'; max-width: 600px; m
 document.getElementsByTagName("head")[0].innerHTML = titleHeader + stylesHeader;
 document.body.innerHTML = null;
 document.body.innerHTML = "<h2>" + title + "</h2>";
-document.body.innerHTML += "<h3>" + byline + "</h3";
+
+if (byline) {
+    document.body.innerHTML += "<h3>" + byline + "</h3";
+}
+
 document.body.innerHTML += content;
