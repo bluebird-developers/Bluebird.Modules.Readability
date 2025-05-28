@@ -5,6 +5,6 @@
     "build": "esbuild readability.js --minify --bundle --outdir=dist"
   },
   "dependencies": {
-    "esbuild": "^0.25.4"
+    "esbuild": "^0.25.5"
   }
 }
